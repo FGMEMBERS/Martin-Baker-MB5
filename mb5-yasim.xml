@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Martin Baker MB 5 - 2011 Emmanuel BARANGER
+   
+     sources          : http://en.wikipedia.org/wiki/Martin-Baker_MB_5
+
+     wingspan         : 35 ft 0 in ( 10.7 m  )
+     length           : 37 ft 9 in ( 11.5 m  )
+     height           : 15 ft 0 in (  4.5 m  )
+     max speed        : 740 km/h   ( 403.3 kt) at 20000 ft ( 6100 m )
+     empty weight     : 9233 lb    ( 4188 kg )
+     engine           : Rolls-Royce Griffon 83 liquid-cooled V-12 engine ( 2340 hp )
+-->
+
+<airplane mass="4188" >
+
+  <approach speed="80" aoa="6">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
+    <control-setting axis="/controls/gear/gear-down" value="1"/>
+    <control-setting axis="/controls/flight/flaps" value="1"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0.8"/>
+    <solve-weight idx="0" weight="180"/>
+  </approach>
+  
+  <cruise speed="390" alt="12000" >
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.7"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="0.8" />
+    <control-setting axis="/controls/gear/gear-down" value="0"/>
+    <control-setting axis="/controls/flight/flaps" value="0"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
+    <solve-weight idx="0" weight="180"/>
+  </cruise>
+
+  <cockpit x="-0.145" y="0" z="0.936"/>
+
+  <fuselage ax=" 4.722" ay="0" az="0.060" bx=" 3.558" by="0" bz="0.118" width="1.07" taper="0.70" midpoint="1.0" cy="2" cx="2"/>
+  <fuselage ax=" 3.558" ay="0" az="0.118" bx="-0.734" by="0" bz="0.118" width="1.07" taper="1.00" midpoint="1.0" cy="2" cx="2"/>
+  <fuselage ax="-0.734" ay="0" az="0.118" bx="-4.928" by="0" bz="0.206" width="1.07" taper="0.70" midpoint="0.0" cy="2" cx="2"/>
+
+  <wing x="0.824" y="0.274" z="-0.522" 
+        chord="2.966" 
+        length="5.085" 
+        taper="0.50" 
+	      dihedral="3" 
+        sweep="-1"
+	      camber="0.02">
+        <stall aoa="20" width="1" peak="1.5"/>
+        <flap0 start="0.05" end="0.56" lift="1.6" drag="2.9"/>
+        <flap1 start="0.55" end="0.96" lift="1.4" drag="1.1"/>
+
+        <control-input axis="/controls/flight/flaps" control="FLAP0"/>
+        <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
+        <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
+
+        <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
+        <control-output control="FLAP1" side="left" prop="surface-positions/left-aileron-pos-norm"/>
+        <control-output control="FLAP1" side="right" prop="surface-positions/right-aileron-pos-norm"/>
+
+        <control-speed control="FLAP0" transition-time="4"/>
+        <control-speed control="FLAP1" transition-time="0.2"/>
+  </wing>
+  
+  <hstab x="-3.879" y="0" z="0.494" 
+         chord="1.808" 
+         length="2.344" 
+         taper="0.38"
+         sweep="4"> 
+         <stall aoa="18" width="1" peak="1.5"/>
+         <flap0 start="0.14" end="1" lift="2.0" drag="1.4"/>
+
+         <control-input axis="/controls/flight/elevator" control="FLAP0"/>
+         <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
+
+         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+  </hstab>
+
+  <vstab x="-4.461" y="0" z="-0.355" 
+         chord="2.558" 
+         length="2.6061" 
+         taper="0.26" 
+         sweep="20">
+         <stall aoa="16" width="1" peak="1.5"/>
+         <flap0 start="0" end="1" lift="2.5" drag="1.3"/>
+
+         <control-input axis="/controls/flight/rudder" square="true" control="FLAP0" invert="true"/>
+         <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
+
+         <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"  min="1" max="-1"/>
+  </vstab>
+
+  <!-- Engines   source            : http://en.wikipedia.org/wiki/Rolls-Royce_Griffon
+
+                 name              : Rolls-Royce Griffon
+                 type              : 12-cylinder supercharged liquid-cooled 60 deg Vee aircraft piston engine
+                 power cruise      : 2340 hp at 2750 rpm at 7000 ft
+                 weight            : 1980 lb  ( 900 kg  )
+                 displacement      : 2240 in3 (  36.7 L )
+                 compression       : 6:1
+  -->
+  <propeller x="2.605" y="0.0" z="0.327"
+             radius="1.54"
+             mass="1980"
+             moment="35"
+             cruise-speed="390"
+             cruise-alt="5000"
+             cruise-power="2200"
+             cruise-rpm="2500"
+             takeoff-power="2340"
+             takeoff-rpm="2750"
+             gear-ratio="0.5"
+             fine-stop="0.4"
+             coarse-stop="6.0"
+             contra="1">
+             <piston-engine eng-rpm="2750"
+                            eng-power="2340"
+                            displacement="2240"
+                            compression="6"/>
+             <actionpt x="4.036" y="0.0" z="0.327"/>
+             <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle"/>
+             <control-input control="STARTER" axis="/controls/engines/engine[0]/starter"/>
+             <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos"/>
+             <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture"/>
+             <control-input control="ADVANCE" axis="/controls/engines/engine[0]/propeller-pitch"/>
+  </propeller>
+
+  <!-- left main -->
+  <gear x="2.045" y=" 2.385" z="-2.260" 
+        compression="0.4"
+        retract-time="5"
+        spring="0.8"
+        damp="4.2"
+        sfric="0.6"
+        dfric="0.8"
+        initial-load="0"
+        upx="0" upy="-0.07" upz="1">
+        <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+
+        <control-speed control="EXTEND" transition-time="4.9"/>
+
+        <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
+  </gear>
+
+  <!-- right main -->
+  <gear x="2.045" y="-2.385" z="-2.260" 
+        compression="0.4"
+        retract-time="5"
+        spring="0.8"
+        damp="4.2"
+        sfric="0.6"
+        dfric="0.8"
+        initial-load="0"
+        upx="0" upy="0.07" upz="1">
+        <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+
+        <control-speed control="EXTEND" transition-time="5.2"/>
+
+        <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
+  </gear>
+
+  <!-- Tail wheel; has castering selectable by a wheel lock -->
+  <gear x="-4.235" y="0" z="-1.031"
+        compression="0.28"
+        sfric="0.3"
+        dfric="0.5"
+        initial-load="0">
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+
+        <control-speed control="EXTEND" transition-time="5"/>
+
+        <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
+  </gear>
+
+  <!-- Fuel  -->  
+  <tank x="1.183" y=" 2.406" z="-0.384" capacity="410"/>
+  <tank x="2.133" y=" 0.000" z="-0.436" capacity="256"/>
+  <tank x="1.183" y="-2.406" z="-0.384" capacity="410"/>
+
+  <weight x="0.83" y="0" z="-0.53" mass-prop="/sim/weight[0]/weight-lb"/>
+
+  <!-- CG theorique centre de la corde x=1.140 y=0.0 z=-0.400 -->
+  <ballast x="3.9" y="0.001" z="-3.16" mass="600"/>
+
+</airplane>
+
