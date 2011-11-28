@@ -187,8 +187,12 @@
 
   <!-- Une ombre pour OSG -->
   <model>
-    <name>shadowOSG</name>
     <path>Aircraft/Martin-Baker-MB5/Models/shadow.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.691 </z-m>
+    </offsets>
   </model>
 
   <!-- Interieur -->

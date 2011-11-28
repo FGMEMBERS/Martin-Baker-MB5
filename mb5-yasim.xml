@@ -59,7 +59,7 @@
         <control-output control="FLAP1" side="right" prop="surface-positions/right-aileron-pos-norm"/>
 
         <control-speed control="FLAP0" transition-time="4"/>
-        <control-speed control="FLAP1" transition-time="0.2"/>
+        <control-speed control="FLAP1" transition-time="4"/>
   </wing>
   
   <hstab x="-3.879" y="0" z="0.494" 
@@ -74,6 +74,8 @@
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
 
          <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+
+         <control-speed control="FLAP0" transition-time="4"/>
   </hstab>
 
   <vstab x="-4.461" y="0" z="-0.355" 
@@ -88,6 +90,8 @@
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
 
          <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"  min="1" max="-1"/>
+
+         <control-speed control="FLAP0" transition-time="4"/>
   </vstab>
 
   <!-- Engines   source            : http://en.wikipedia.org/wiki/Rolls-Royce_Griffon
