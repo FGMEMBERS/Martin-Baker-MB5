@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -68,6 +68,39 @@
       <x-m>  0.01108 </x-m>
       <y-m>  0.08000 </y-m>
       <z-m> -0.02000 </z-m>
+    </offsets>
+  </model>
+
+  <!-- BOOST -->
+  <model>
+    <path>Aircraft/Martin-Baker-MB5/Models/Interior/Panel/Instruments/boost/boost.xml</path>
+    <offsets>
+      <x-m>  0.01643 </x-m>
+      <y-m>  0.16160 </y-m>
+      <z-m> -0.12000 </z-m>
+      <heading-deg> -30 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- AMMETER -->
+  <model>
+    <path>Aircraft/Martin-Baker-MB5/Models/Interior/Panel/Instruments/ammeter/ammeter.xml</path>
+    <offsets>
+      <x-m>  0.02002 </x-m>
+      <y-m>  0.16000 </y-m>
+      <z-m> -0.04500 </z-m>
+      <heading-deg> -30 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- FUEL -->
+  <model>
+    <path>Aircraft/Martin-Baker-MB5/Models/Interior/Panel/Instruments/fuel/fuel.xml</path>
+    <offsets>
+      <x-m> 0.02594 </x-m>
+      <y-m> 0.15880 </y-m>
+      <z-m> 0.03000 </z-m>
+      <heading-deg> -30 </heading-deg>
     </offsets>
   </model>
 

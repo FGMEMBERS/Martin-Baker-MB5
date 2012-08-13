@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?> 
 
 <PropertyList>
 
-   <key n="100">
+  <key n="100">
     <name>d</name>
     <desc>Crew door</desc>
     <binding>
      <command>nasal</command>
      <script>doors.doorsystem.crewexport();</script>
     </binding>
-   </key>
+  </key>
 
-   <key n="101">
+  <key n="101">
      <name>e</name>
      <desc>Guns</desc>
      <binding>
@@ -24,7 +24,7 @@
          <script>guns.stop_MG()</script>
        </binding>
      </mod-up>
-   </key>
+  </key>
 
 </PropertyList>
 

@@ -2,12 +2,13 @@
 
 <PropertyList> 
 
-  <path>oil-temp.ac</path>
-
+  <path>boost.ac</path>
+    
   <animation>
     <object-name>fond</object-name>
     <object-name>face</object-name>
     <object-name>needle</object-name>
+    <object-name>limiter</object-name>
 
     <object-name>vitre</object-name>
   </animation>
@@ -40,25 +41,31 @@
   <animation> 
     <type>rotate</type>
     <object-name>needle</object-name>
-    <property>engines/engine[0]/oil-temperature-degf</property>
+    <property>engines/engine[0]/boost-gauge-inhg</property>
+    <!-- <factor>0.4911</factor>
+    <offset>-29.92</offset> -->
     <interpolation> 
-      <entry><ind>  32 </ind><dep> -42.5 </dep></entry>
-      <entry><ind>  68 </ind><dep> -30.0 </dep></entry>
-      <entry><ind> 140 </ind><dep>   0.0 </dep></entry>
-      <entry><ind> 176 </ind><dep>  10.0 </dep></entry>
-      <entry><ind> 212 </ind><dep>  25.0 </dep></entry>
-      <entry><ind> 248 </ind><dep>  42.5 </dep></entry>
+      <entry><ind> -4 </ind><dep> -43 </dep></entry>
+      <entry><ind> -2 </ind><dep> -22 </dep></entry>
+      <entry><ind>  0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  2 </ind><dep>  21 </dep></entry>
+      <entry><ind>  4 </ind><dep>  42 </dep></entry>
+      <entry><ind>  6 </ind><dep>  63 </dep></entry>
+      <entry><ind>  8 </ind><dep>  85 </dep></entry>
+      <entry><ind> 10 </ind><dep> 106 </dep></entry>
+      <entry><ind> 12 </ind><dep> 126 </dep></entry>
+      <entry><ind> 14 </ind><dep> 147 </dep></entry>
+      <entry><ind> 16 </ind><dep> 167 </dep></entry>
+      <entry><ind> 18 </ind><dep> 189 </dep></entry>
+      <entry><ind> 20 </ind><dep> 209 </dep></entry>
+      <entry><ind> 26 </ind><dep> 272 </dep></entry>
     </interpolation>
-    <center>
-      <x-m>  0.00229331 </x-m>
-      <y-m>  0.00000000 </y-m>
-      <z-m> -0.01344000 </z-m>
-    </center>
-    <axis> 
+    <axis>
       <x> -1 </x>
       <y>  0 </y>
       <z>  0 </z>
     </axis>
   </animation>
-
+    
 </PropertyList>
+
