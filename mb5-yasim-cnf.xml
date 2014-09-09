@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList include="mb5-base.xml">
+
+  <sim>
+
+    <description>Martin Baker MB 5 (YASim)</description>
+    <flight-model>yasim</flight-model>
+    <aero>mb5-yasim</aero>
+
+  </sim>
+  
+</PropertyList>
