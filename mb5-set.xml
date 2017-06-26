@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="ISO-8859-1"?> 
 
-<!-- <PropertyList include="mb5-jsbsim-cnf.xml"> -->
-<PropertyList include="mb5-yasim-cnf.xml">
+<PropertyList include="Systems/mb5-base.xml">
 
   <sim>
 
     <description>Martin Baker MB 5 (Yasim)</description>
     <author>Emmanuel BARANGER (3D/FDM)</author>
 
+    <aircraft-version>0.2</aircraft-version>
+    <status>Alpha</status>
+    
+    <flight-model>yasim</flight-model>
+    <aero>Systems/mb5-yasim</aero>
+    
+    <tags>
+      <tag>fighter</tag>
+      <tag>retractable-gear</tag>
+      <tag>martin-baker</tag>
+      <tag>1940s</tag>
+      <tag>ww2</tag>
+      <tag>prototype</tag>
+      <tag>tail-dragger</tag>
+      <tag>combat</tag>
+      <tag>rembrandt</tag>
+      <tag>1-engine</tag>
+      <tag>piston</tag>
+    </tags>
+    
     <rating>
       <FDM type="int">     3 </FDM>
       <systems type="int"> 1 </systems>
@@ -18,4 +37,3 @@
   </sim>
 
 </PropertyList>
-

@@ -11,16 +11,6 @@
     <!-- Objets transparents -->
   </animation>
 
-  <!-- ASI -->
-  <model>
-    <path>Aircraft/Martin-Baker-MB5/Models/Interior/Panel/Instruments/asi/asi.xml</path>
-    <offsets>
-      <x-m>  0.006081 </x-m>
-      <y-m> -0.080000 </y-m>
-      <z-m>  0.070000 </z-m>
-    </offsets>
-  </model>
-
   <!-- AI -->
   <model>
     <path>Aircraft/Martin-Baker-MB5/Models/Interior/Panel/Instruments/ai/ai.xml</path>
@@ -30,7 +20,7 @@
       <z-m> 0.070 </z-m>
     </offsets>
   </model>
-
+  
   <!-- ALT -->
   <model>
     <path>Aircraft/Martin-Baker-MB5/Models/Interior/Panel/Instruments/alt/alt.xml</path>
@@ -40,34 +30,25 @@
       <z-m> 0.070 </z-m>
     </offsets>
   </model>
-
-  <!-- RPM -->
+  
+  <!-- AMMETER -->
   <model>
-    <path>Aircraft/Martin-Baker-MB5/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
+    <path>Aircraft/Martin-Baker-MB5/Models/Interior/Panel/Instruments/ammeter/ammeter.xml</path>
     <offsets>
-      <x-m>  0.01083 </x-m>
-      <y-m> -0.08000 </y-m>
-      <z-m> -0.02000 </z-m>
+      <x-m>  0.02002 </x-m>
+      <y-m>  0.16000 </y-m>
+      <z-m> -0.04500 </z-m>
+      <heading-deg> -30 </heading-deg>
     </offsets>
   </model>
-
-  <!-- COMPASS -->
+  
+  <!-- ASI -->
   <model>
-    <path>Aircraft/Martin-Baker-MB5/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <path>Aircraft/Martin-Baker-MB5/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
-      <x-m>  0.006 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -0.020 </z-m>
-    </offsets>
-  </model>
-
-  <!-- TURN -->
-  <model>
-    <path>Aircraft/Martin-Baker-MB5/Models/Interior/Panel/Instruments/turn/turn.xml</path>
-    <offsets>
-      <x-m>  0.01108 </x-m>
-      <y-m>  0.08000 </y-m>
-      <z-m> -0.02000 </z-m>
+      <x-m>  0.006081 </x-m>
+      <y-m> -0.080000 </y-m>
+      <z-m>  0.070000 </z-m>
     </offsets>
   </model>
 
@@ -81,18 +62,17 @@
       <heading-deg> -30 </heading-deg>
     </offsets>
   </model>
-
-  <!-- AMMETER -->
+  
+  <!-- COMPASS -->
   <model>
-    <path>Aircraft/Martin-Baker-MB5/Models/Interior/Panel/Instruments/ammeter/ammeter.xml</path>
+    <path>Aircraft/Martin-Baker-MB5/Models/Interior/Panel/Instruments/compass/compass.xml</path>
     <offsets>
-      <x-m>  0.02002 </x-m>
-      <y-m>  0.16000 </y-m>
-      <z-m> -0.04500 </z-m>
-      <heading-deg> -30 </heading-deg>
+      <x-m>  0.006 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.020 </z-m>
     </offsets>
   </model>
-
+  
   <!-- FUEL -->
   <model>
     <path>Aircraft/Martin-Baker-MB5/Models/Interior/Panel/Instruments/fuel/fuel.xml</path>
@@ -103,6 +83,25 @@
       <heading-deg> -30 </heading-deg>
     </offsets>
   </model>
+  
+  <!-- RPM -->
+  <model>
+    <path>Aircraft/Martin-Baker-MB5/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
+    <offsets>
+      <x-m>  0.01083 </x-m>
+      <y-m> -0.08000 </y-m>
+      <z-m> -0.02000 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/Martin-Baker-MB5/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m>  0.01108 </x-m>
+      <y-m>  0.08000 </y-m>
+      <z-m> -0.02000 </z-m>
+    </offsets>
+  </model>
 
 </PropertyList>
-

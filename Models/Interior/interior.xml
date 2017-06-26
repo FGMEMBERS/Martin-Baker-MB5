@@ -17,20 +17,13 @@
     <object-name>intverriere</object-name>
   </animation>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>intvitres</object-name>
     <object-name>intverriere</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>intvitres</object-name>
-    <object-name>intverriere</object-name>
-  </animation>
-
+  </effect>
+  
   <!-- Pilote -->
   <model>
     <path>Aircraft/Martin-Baker-MB5/Models/Pilot/pilot.xml</path>
@@ -60,9 +53,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>IntAllCanopy</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>translate</type>
     <object-name>IntAllCanopy</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <interpolation>
       <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
       <entry><ind> 1 </ind><dep> 0.6 </dep></entry>
@@ -75,4 +82,3 @@
   </animation>
 
 </PropertyList>
-
