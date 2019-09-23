@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+  
+  <engine>
+    <engine-num type="int">0</engine-num>
+    <rpm type="double">700</rpm>
+    <running>false</running>
+  </engine>
+  
+</PropertyList>

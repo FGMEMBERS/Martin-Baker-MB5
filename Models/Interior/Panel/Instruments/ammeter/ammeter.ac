@@ -10,7 +10,7 @@ data 5
 cache
 texture "ammeter.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 31
 0.00299 -0.00946 -0.021712
 0.00299 -0.01409 -0.018631
@@ -185,7 +185,7 @@ data 4
 face
 texture "ammeter.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 17
 0.001175 0 0.026257
 0.001175 0.010048 0.024258
@@ -309,7 +309,7 @@ data 4
 fond
 texture "ammeter.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 180.000005
 numvert 178
 0.000915 -0.026919 -0.024733
 0.000915 0.026919 -0.024733
@@ -1485,7 +1485,7 @@ data 6
 needle
 texture "ammeter.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 15
 0.001773 0.013821 0.000678
 0.001773 -0.01344 0.001095
@@ -1579,7 +1579,7 @@ data 6
 visses
 texture "ammeter.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 48
 0.001013 -0.023293 -0.027666
 0.001013 -0.024683 -0.027254
@@ -1900,7 +1900,7 @@ name "vitre"
 loc 0 0 -0
 data 5
 vitre
-crease 45.000001
+crease 180.000005
 numvert 31
 0.003905 0.022643 -0.004813
 0.003905 0.021147 -0.009415

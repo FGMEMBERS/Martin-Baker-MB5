@@ -1,6 +1,6 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "Transparent" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0.85
+MATERIAL "Transparent" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 64 trans 0.85
 OBJECT world
 kids 5
 OBJECT poly
@@ -10,7 +10,7 @@ data 4
 face
 texture "boost.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 17
 0 0 -0.029178
 0 0.01148 -0.026957
@@ -134,7 +134,7 @@ data 4
 fond
 texture "boost.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 192
 -0.000524 0.006428 -0.031418
 -0.000524 0.012638 -0.029595
@@ -1457,7 +1457,7 @@ data 7
 limiter
 texture "boost.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 17
 0.005121 -0.025672 0.012651
 0.005121 -0.027524 0.007504
@@ -1590,7 +1590,7 @@ data 6
 needle
 texture "boost.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 14
 0.000046 0.02295 0.00043
 -0.000066 0.025006 -0
@@ -1682,7 +1682,7 @@ name "vitre"
 loc 0 0 -0
 data 5
 vitre
-crease 45.000001
+crease 180.000005
 numvert 33
 0.011893 -0.000081 -0.030343
 0.011893 0.006097 -0.02976
